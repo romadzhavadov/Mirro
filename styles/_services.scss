@@ -1,0 +1,84 @@
+.services {
+    padding: 100px 0;
+    overflow: hidden;
+    background-color: #E5E5E5;
+    overflow: hidden;
+
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+    }
+    
+    &__col {
+        width: 33.33%;
+        padding: 8px;
+        overflow: hidden;
+    }
+
+
+    &__card {
+        background-color: #F4F3F0;
+        padding: 30px 42px 35px 30px;
+        border-radius: 16px;
+        max-width: 379px;
+        height: 100%;
+    }
+
+    &__img {
+        margin-bottom: 9px;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+    }
+
+    &__caption {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #3A5F56;
+        margin-bottom: 6px;
+
+        &:hover {
+            color: #DB343B;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #292C32;
+        margin-bottom: 17px;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #3A5F56;
+
+        &:hover {
+            color: #DB343B;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        &__col {
+            width: 50%;
+        }    
+    }
+}
+
+@media (max-width: 425px) {
+    .services {
+        &__col {
+            width: 100%;
+            max-width: 100%;
+        }    
+    }
+}

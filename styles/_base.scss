@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('../fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(41, 44, 50, 1);
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1198px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.head {
+    &__box {
+        display: block;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+
+    &__wrap {
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        max-width: 160px;
+        max-height: 19px;
+    }
+
+    &__caption {
+        font-family: 'SourceSerifPro', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        line-height: 1.2;
+        color: #3A5F56;
+        margin-bottom: 11px;
+
+        &-red {
+            color: #DB343B;
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 591px;
+    }
+
+}
